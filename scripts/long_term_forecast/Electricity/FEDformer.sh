@@ -6,7 +6,7 @@ for SEED in "${SEEDS[@]}"
 do
   for PRED_LEN in "${PRED_LENS[@]}"
   do
-    python -u decompose_eval.py \
+    python -u run.py \
       --task_name long_term_forecast \
       --is_training 1 \
       --root_path ./dataset/electricity/ \
