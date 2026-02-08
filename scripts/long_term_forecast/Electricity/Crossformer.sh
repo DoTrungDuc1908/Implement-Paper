@@ -7,7 +7,7 @@ do
   for PRED_LEN in "${PRED_LENS[@]}"
   do
     python -u run.py \
-      --gpu 1 \
+      --gpu 0 \
       --task_name long_term_forecast \
       --is_training 1 \
       --root_path ./dataset/electricity/ \
