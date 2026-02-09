@@ -2,7 +2,7 @@
 
 model_name=TimeXer
 SEEDS=(42 123 456)
-PRED_LENS=(96 192 336 720)
+PRED_LENS=(96 192 336)
 for SEED in "${SEEDS[@]}"
 do
     for PRED_LEN in "${PRED_LENS[@]}"
@@ -29,6 +29,7 @@ do
         --des 'Exp' \
         --d_ff 256 \
         --batch_size 4 \
+        --train_epochs 2 \
         --itr 1 
         
         python -u run.py \

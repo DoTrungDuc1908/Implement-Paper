@@ -1,6 +1,6 @@
 model_name=Transformer
 SEEDS=(42 123 456)
-PRED_LENS=(96 192 336 720)
+PRED_LENS=(96 192 336)
 for SEED in "${SEEDS[@]}"
 do
   for PRED_LEN in "${PRED_LENS[@]}"
@@ -26,6 +26,7 @@ do
       --c_out 321 \
       --des 'Exp' \
       --batch_size 32 \
+      --train_epochs 2 \
       --itr 1
   done
 done

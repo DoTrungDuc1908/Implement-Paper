@@ -1,6 +1,6 @@
 model_name=iTransformer
 SEEDS=(42 123 456)
-PRED_LENS=(96 192 336 720)
+PRED_LENS=(96 192 336)
 
 for SEED in "${SEEDS[@]}"
 do
@@ -29,6 +29,7 @@ do
       --d_model 128 \
       --d_ff 128 \
       --batch_size 32 \
+      --train_epochs 2 \
       --learning_rate 0.0005 \
       --itr 1
   done

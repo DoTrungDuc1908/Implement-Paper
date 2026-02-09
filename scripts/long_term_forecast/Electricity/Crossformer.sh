@@ -1,6 +1,6 @@
 model_name=Crossformer
 SEEDS=(42 123 456)
-PRED_LENS=(96 192 336 720)
+PRED_LENS=(96 192 336)
 
 for SEED in "${SEEDS[@]}"
 do
@@ -31,6 +31,7 @@ do
       --top_k 5 \
       --des 'Exp' \
       --batch_size 16 \
+      --train_epochs 2 \
       --itr 1
   done
 done

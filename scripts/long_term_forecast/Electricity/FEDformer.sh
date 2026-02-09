@@ -1,6 +1,6 @@
 model_name=FEDformer
 SEEDS=(42 123 456)
-PRED_LENS=(96 192 336 720)
+PRED_LENS=(96 192 336)
 
 for SEED in "${SEEDS[@]}"
 do
@@ -25,6 +25,7 @@ do
       --enc_in 321 \
       --dec_in 321 \
       --c_out 321 \
+      --train_epochs 2 \
       --des 'Exp' \
       --itr 1
   done
