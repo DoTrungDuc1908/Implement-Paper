@@ -54,6 +54,7 @@ do
         --des 'Exp' \
         --d_ff 256 \
         --batch_size 4 \
+        --train_epochs 2 \
         --no_zero_norm \
         --itr 1
         
@@ -79,6 +80,7 @@ do
         --des 'Exp' \
         --d_ff 256 \
         --batch_size 4 \
+        --train_epochs 2 \
         --itr 1 
         
         python -u est_mi_slow.py \
@@ -103,6 +105,7 @@ do
         --des 'Exp' \
         --d_ff 256 \
         --batch_size 4 \
+        --train_epochs 2 \
         --no_zero_norm \
         --itr 1
 
